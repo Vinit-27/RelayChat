@@ -2,11 +2,11 @@
 const configuration = {
     iceServers: [
         { urls: "stun:stun.l.google.com:19302" },
-        { urls: "turn:10.7.46.111:3478", username: "root", credential: "root" }
+        { urls: "turn:10.7.74.235:3478", username: "root", credential: "root" }
     ]
 };
 
-const socket = new SockJS('https://10.7.46.111:8082/ws-match');  // WebSocket endpoint as defined in WebSocketConfig
+const socket = new SockJS('https://10.7.74.235:8082/ws-match');  // WebSocket endpoint as defined in WebSocketConfig
 const stompClient = Stomp.over(socket);
 
 let id;
@@ -49,11 +49,11 @@ let localStream;
 let peerConnection;
 let dataChannel;
 
-const apiGatewayUrl = "https://10.7.46.111:8080";
-const session_manegement = "https://10.7.46.111:8081"
-const matching_service = "https://10.7.46.111:8082"
-const video_chat = "https://10.7.46.111:8083"
-const termination_service = "https://10.7.46.111:8084"
+const apiGatewayUrl = "https://10.7.74.235:8080";
+const session_manegement = "https://10.7.74.235:8081"
+const matching_service = "https://10.7.74.235:8082"
+const video_chat = "https://10.7.74.235:8083"
+const termination_service = "https://10.7.74.235:8084"
 
 
 
