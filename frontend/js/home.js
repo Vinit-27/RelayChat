@@ -18,9 +18,9 @@ function generateUniqueSessionId() {
 
 const UserId = generateUniqueSessionId();
 console.log(UserId);
-const apiGatewayUrl = "https://10.7.74.235:8080";  // API Gateway URL
-const session_manegement = "https://10.7.74.235:8081"
-const matching_service = "https://10.7.74.235:8082"
+const apiGatewayUrl = "https://10.7.94.121:8080";  // API Gateway URL
+const session_manegement = "https://10.7.94.121:8081"
+const matching_service = "https://10.7.94.121:8082"
 
 // Handle user clicking the "Start" button
 document.getElementById("startMatch").addEventListener("click", function () {

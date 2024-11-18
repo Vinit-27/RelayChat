@@ -2,7 +2,7 @@ import http.server
 import ssl
 
 # Create an HTTP server
-ip = '10.7.74.235'
+ip = '10.7.94.121'
 server_address = (ip, 8000)
 httpd = http.server.HTTPServer(server_address, http.server.SimpleHTTPRequestHandler)
 
